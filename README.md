@@ -182,17 +182,26 @@ Benefits:
 ✅ Just starts everything
 ### 🚀 How to Use:
 ## Option 1: Full Featured (Recommended)
+```
 cd E:\FastApi
 .\start_app.ps1
+```
 ## Option 2: Simple Batch
+```
 cd E:\FastApi
 start_app.bat
+```
 ## Option 3: Python Cross-platform
+```
 cd E:\FastApi
 python start_app.py
+```
 ## Option 4: Quick Launch
+```
 cd E:\FastApi
 .\quick_start.ps1
+```
+<br>
 📋 What Each Script Does:
 Activates the Python virtual environment (FastAPi)
 Starts Django backend server on port 8002
