@@ -22,7 +22,7 @@ React Frontend (3000) → FastAPI Gateway (8000) → Django Backend (8002) → S
 ### Service 3: User Profile Service
 - **Port**: 8003
 - **Technology**: FastAPI
-- **Database**: MongoDB (user profiles, preferences)
+- **Database**: PostgreSQL (user profiles, preferences) 
 - **Responsibility**: User profile management
 
 ### Service 4: Notification Service
