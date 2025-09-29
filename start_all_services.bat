@@ -2,16 +2,16 @@
 echo 🚀 Starting FastAPI-Django-React Application...
 echo ===============================================
 
-REM Activate virtual environment and start Django
+REM Start Django without virtual environment
 echo 1️⃣ Starting Django Backend Server (Port 8002)...
-start "Django Backend" cmd /k "FastAPi\Scripts\activate && cd django_backend && python manage.py runserver 127.0.0.1:8002"
+start "Django Backend" cmd /k "cd django_backend && python manage.py runserver 127.0.0.1:8002"
 
 REM Wait 3 seconds
 timeout /t 3 /nobreak > nul
 
 REM Start FastAPI Integration Layer
 echo 2️⃣ Starting FastAPI Integration Layer (Port 8000)...
-start "FastAPI Integration" cmd /k "FastAPi\Scripts\activate && FastAPi\Scripts\python.exe -m uvicorn index:app --reload --port 8000"
+start "FastAPI Integration" cmd /k "call FastAPi\Scripts\activate.bat && FastAPi\Scripts\python.exe -m uvicorn index:app --reload --port 8000"
 
 REM Wait 3 seconds  
 timeout /t 3 /nobreak > nul
